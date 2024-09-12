@@ -1,0 +1,4 @@
+﻿  Module3_Exercise1.cpp
+C:\Users\John.Mathis.SERN\source\repos\SSE550_CodingExercises\Coding_Exercises\Module3_Exercise1\Module3_Exercise1.cpp(23,35): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\John.Mathis.SERN\source\repos\SSE550_CodingExercises\Coding_Exercises\Module3_Exercise1\Module3_Exercise1.cpp(24,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Module3_Exercise1.vcxproj -> C:\Users\John.Mathis.SERN\source\repos\SSE550_CodingExercises\Coding_Exercises\x64\Debug\Module3_Exercise1.exe
