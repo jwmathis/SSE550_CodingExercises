@@ -3,22 +3,55 @@
 
 #include <iostream>
 #include <string>
-#include <sstream>
 
 using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //============================================
+    // Declare variables
+    string noun;
+    string adjective;
+    string verb;
+    string sentence;
+    int choice;
+    //============================================
+
+    // Prompt the user for a noun
+    cout << "Enter a noun: ";
+    getline(cin, noun);
+    
+    // Prompt the user for an adjective
+    cout << "Enter an adjective: ";
+    getline(cin, adjective);
+
+    // Prompt the user for a verb
+    cout << "Enter a verb: ";
+    getline(cin, verb);
+
+    // Prompt the user for a sentence template
+    cout << "Choose a sentence template:\n";
+    cout << "1. [Adjective] [Noun] [Verb]\n";
+    cout << "2. [Noun] [Verb] [Adjective]\n";
+    cout << "3. [Verb] [Adjective] [Noun]\n";
+    cout << "Enter the number of your choice: ";
+    cin >> choice;
+
+    // Concatenate the words to form a sentence
+    switch (choice) {
+    case 1:
+        sentence = adjective + " " + noun + " " + verb;
+        break;
+    case 2:
+        sentence = noun + " " + verb + " " + adjective;
+        break;
+    case 3:
+        sentence = verb + " " + adjective + " " + noun;
+        break;
+    }
+    // Output the concatenated sentence
+    cout << sentence << endl;
+
+    return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
