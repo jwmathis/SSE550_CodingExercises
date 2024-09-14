@@ -40,7 +40,7 @@ int main()
 		cout << name << " is only one letter.\n";
 	}
 	else if (length_of_name > 1) { // name has more than 1 letter
-		cout << name << " begins with " << name[0] << "\n";
+		cout << name << " begins with " << name_without_characters[0] << "\n";
 		cout << "There are " << length_of_name << " letters in the name.";
 	}
 	else { // name has 0 letters
