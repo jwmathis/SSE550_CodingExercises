@@ -21,16 +21,13 @@ int main (void) {
     div_by_100 = (year % 100 == 0);
     div_by_400 = (year % 400 == 0);
 
-    if ( (div_by_four && div_by_400) || (div_by_four && !(div_by_100)) ) {
+    if ( div_by_four && (!div_by_100 || div_by_400) ) {
     // Output if year is a leap year or not
     cout << year << " is a leap year.";
     } 
     else {
         cout << year << " is not a leap year.";
     }
-
-
-
 
     return 0;
 }
