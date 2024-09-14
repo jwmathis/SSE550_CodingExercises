@@ -1,12 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\John.Mathis.SERN\\source\\repos\\SSE550_CodingExercises\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\John Wesley\\source\\repos\\jwmathis\\SSE550_CodingExercises\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\John Wesley\\source\\repos\\jwmathis\\SSE550_CodingExercises\\Coding_Exercises\\Module5_Exercise2\\Module5_Exercise2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Coding_Exercises\\Module5_Exercise2\\Module5_Exercise2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\John Wesley\\source\\repos\\jwmathis\\SSE550_CodingExercises\\Coding_Exercises\\Module5_Exercise1\\Module5_Exercise1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Coding_Exercises\\Module5_Exercise1\\Module5_Exercise1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Module5_Exercise2.cpp",
+              "DocumentMoniker": "C:\\Users\\John Wesley\\source\\repos\\jwmathis\\SSE550_CodingExercises\\Coding_Exercises\\Module5_Exercise2\\Module5_Exercise2.cpp",
+              "RelativeDocumentMoniker": "Coding_Exercises\\Module5_Exercise2\\Module5_Exercise2.cpp",
+              "ToolTip": "C:\\Users\\John Wesley\\source\\repos\\jwmathis\\SSE550_CodingExercises\\Coding_Exercises\\Module5_Exercise2\\Module5_Exercise2.cpp",
+              "RelativeToolTip": "Coding_Exercises\\Module5_Exercise2\\Module5_Exercise2.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-14T13:19:07.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Module5_Exercise1.cpp",
+              "DocumentMoniker": "C:\\Users\\John Wesley\\source\\repos\\jwmathis\\SSE550_CodingExercises\\Coding_Exercises\\Module5_Exercise1\\Module5_Exercise1.cpp",
+              "RelativeDocumentMoniker": "Coding_Exercises\\Module5_Exercise1\\Module5_Exercise1.cpp",
+              "ToolTip": "C:\\Users\\John Wesley\\source\\repos\\jwmathis\\SSE550_CodingExercises\\Coding_Exercises\\Module5_Exercise1\\Module5_Exercise1.cpp",
+              "RelativeToolTip": "Coding_Exercises\\Module5_Exercise1\\Module5_Exercise1.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-14T12:55:29.261Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
