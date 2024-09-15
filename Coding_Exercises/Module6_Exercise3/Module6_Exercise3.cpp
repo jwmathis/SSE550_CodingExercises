@@ -9,17 +9,23 @@ int main(void) {
     double grade = 0;
     double userInput;
     double average;
-
+    char letterGrade;
+    //=======================================
+    
     // Get user input for three assignments
-    for (int i = 1; i < 4; i++) {
+    for (int i = 1; i <= 3; i++) {
         do {
             cout << "Enter your grade on exercise " << i << ": ";
             cin >> userInput;
-            // Error if not a digit and prompt for new input
-            if (!(isdigit(userInput))) {
-            cout << "Invalid output.";
+
+            if (userInput < 0 || userInput > 100) {
+                cout << "Invalid output. Please enter a number between 0 and 100. ";
             }
-        } while (!(isdigit(userInput)));
+            else {
+                break; // Exit while loop
+            }
+        } while (true);
+
         // Add input to grade
         grade += userInput;
     }
@@ -27,9 +33,23 @@ int main(void) {
     // Get average grade
     average = grade / 3;
 
-    cout << average;
+    if (average >= 90) {
+        letterGrade = 'A';
+    }
+    else if (average >= 80) {
+        letterGrade = 'B';
+    }
+    else if (average >= 70) {
+        letterGrade = 'C';
+    }
+    else if (average >= 60) {
+        letterGrade = 'D';
+    }
+    else {
+        letterGrade = 'F';
+    }
 
-
+    cout << "Your grade is " << average << " and letter grade " << letterGrade << endl;
 
     return 0;
 }
