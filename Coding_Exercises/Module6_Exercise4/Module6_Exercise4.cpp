@@ -40,16 +40,16 @@ int main()
     cout << "Enter the Boolean expression using variables A, B, C, operators (&&, ||, !) and parentheses: ";
     getline(cin, expression);
 
+    // Check if user input contains C
     bool usesC = (expression.find('C') != string::npos);
-    if (usesC) {
-    // Print truth table header
-    cout << "\nTruth Table:\n";
-    cout << "A | B | C | " << expression << "\n";
-    cout << "------------------------------\n";
 
+    // Print truth table header
+    if (usesC) {
+        cout << "\nTruth Table:\n";
+        cout << "A | B | C | " << expression << "\n";
+        cout << "------------------------------\n";
     }
     else {
-
         cout << "\nTruth Table:\n";
         cout << "A | B | " << expression << "\n";
         cout << "--------------------------\n";
@@ -64,7 +64,7 @@ int main()
             C = truthValues[i][2];
         }
         else {
-            if (i == 4) { break; }
+            if (i == 4) { break; } // Break out of For loop early since fewer values
             A = truthValuesAB[i][0];
             B = truthValuesAB[i][1];
         }
@@ -72,7 +72,7 @@ int main()
         bool result = A; // Start with the value of A for simplicity
         char lastOperator = ' '; // Keep track of the last operator
 
-        for (size_t i = 0; i < expression.length(); ++i) {
+        for (size_t i = 0; i < expression.length(); i++) {
             if (expression[i] == 'A') {
                 result = A;
             }
