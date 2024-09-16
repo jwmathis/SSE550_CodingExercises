@@ -72,7 +72,7 @@ int main()
         bool result = A; // Start with the value of A for simplicity
         char lastOperator = ' '; // Keep track of the last operator
 
-        for (size_t i = 0; i < expression.length(); i++) {
+        for (size_t i = 0; i < expression.length(); i) {
             if (expression[i] == 'A') {
                 result = A;
             }
