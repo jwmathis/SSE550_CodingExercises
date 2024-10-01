@@ -37,7 +37,7 @@ int main()
     //====================================================
 
     // Get user input
-    cout << "Enter the Boolean expression using variables A, B, C, operators (&&, ||, !) and parentheses: ";
+    cout << "Enter the Boolean expression using variables A, B, C, operators (&&, ||, !) and parentheses: "; //works for doing only in order (e.g. A && B works but A && C doesn't)
     getline(cin, expression);
 
     // Check if user input contains C
@@ -69,14 +69,14 @@ int main()
             B = truthValuesAB[i][1];
         }
 
-        bool result = A; // Start with the value of A for simplicity
+        result = A; // Start with the value of A for simplicity
         char lastOperator = ' '; // Keep track of the last operator
 
-        for (size_t i = 0; i < expression.length(); i) {
-            if (expression[i] == 'A') {
+        for (size_t j = 0; j < expression.length(); j++) {
+            if (expression[j] == 'A') {
                 result = A;
             }
-            else if (expression[i] == 'B') {
+            else if (expression[j] == 'B') {
                 if (lastOperator == '&') {
                     result = result && B;
                 }
@@ -84,7 +84,7 @@ int main()
                     result = result || B;
                 }
             }
-            else if (expression[i] == 'C') {
+            else if (expression[j] == 'C') {
                 if (lastOperator == '&') {
                     result = result && C;
                 }
@@ -92,24 +92,49 @@ int main()
                     result = result || C;
                 }
             }
-            else if (expression[i] == '&') {
+            else if (expression[j] == '&') {
                 lastOperator = '&'; // Found an AND operator
             }
-            else if (expression[i] == '|') {
+            else if (expression[j] == '|') {
                 lastOperator = '|'; // Found an OR operator
             }
-            else if (expression[i] == '!') {
-                if (i + 1 < expression.length() && expression[i + 1] == 'A') {
-                    result = !A;
+            else if (expression[j] == '!') {
+                if (j + 1 < expression.length() && expression[j + 1] == 'A') {
+                    if (lastOperator == '&') {
+                        result = result && !A;
+                    }
+                    else if (lastOperator == '|') {
+                        result = result || !A;
+                    }
+                    else {
+                        result = !A;
+                    }
                 }
-                else if (i + 1 < expression.length() && expression[i + 1] == 'B') {
-                    result = !B;
+                else if (j + 1 < expression.length() && expression[j + 1] == 'B') {
+                    if (lastOperator == '&') {
+                        result = result && !B;
+                    }
+                    else if (lastOperator == '|') {
+                        result = result || !B;
+                    }
+                    else {
+                        result = !B;
+                    }
                 }
-                else if (i + 1 < expression.length() && expression[i + 1] == 'C') {
-                    result = !C;
+                else if (j + 1 < expression.length() && expression[j + 1] == 'C') {
+                    if (lastOperator == '&') {
+                        result = result && !C;
+                    }
+                    else if (lastOperator == '|') {
+                        result = result || !C;
+                    }
+                    else {
+                        result = !C;
+                    }
                 }
-                i++; // Skip the next character (A, B, or C) since it's negated
+                j++; // Skip the next character (A, B, or C) since it's negated
             }
+
         }
 
         // Output the truth table

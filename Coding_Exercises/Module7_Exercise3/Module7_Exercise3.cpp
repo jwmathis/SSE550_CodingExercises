@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -10,6 +11,7 @@ int main()
 {
     //=============================================
     // Declare variables
+    srand(time(0)); // seed the random number using current time
     int randomNumber = rand() % 100 + 1;
     int guess;
     int attempts = 0;
