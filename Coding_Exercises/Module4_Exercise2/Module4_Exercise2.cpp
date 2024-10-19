@@ -1,5 +1,7 @@
-// Module4_Exercise2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 4 Exercise 2
+// A program to multiply fractions and return formatted reduced result.
+//--------------------------------------------------------------------------------------
 
 #include <iostream>
 #include <sstream>

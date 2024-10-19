@@ -1,7 +1,6 @@
 //--------------------------------------------------------------------------------------
-//11 September 2024
-//SSE 550, Module 4 Exercise 
-//A simple program that prompts the user for input and then displays that information, 
+// SSE 550, Module 4 Exercise 1
+// A simple program that prompts the user for input and then displays that information, 
 // then prompts the user to verify the data. Using income, filing status, 
 // and number of dependents, the amount of taxes owed is calculated.
 //--------------------------------------------------------------------------------------
@@ -14,13 +13,13 @@ using namespace std;
 int main() {
 
     //========================================================================
-    //  Declaration of constants
+    // Filing status constants
     const int SINGLE = 1;
     const int MARRIED_FILING_JOINTLY = 2;
     const int MARRIED_FILING_SEPARATELY = 3;
     const int HEAD_OF_HOUSEHOLD = 4;
 
-    // Tax brackets
+    // Tax bracket constants
     const float TAX_BRACKET1 = 0.10;
     const float TAX_BRACKET2 = 0.24;
     const float TAX_BRACKET3 = 0.37;
@@ -47,6 +46,7 @@ int main() {
 
     // Tax credit for dependents
     const double TAX_CREDIT_PER_DEPENDENT = 500.00;
+
     // Declaration of variables
     string first_name, last_name, full_name, nickName, userName;
     char middle_initial;
@@ -61,7 +61,7 @@ int main() {
     //=======================================================================
 
 
-        //Display welcome message
+    // Display welcome message
     cout << "***************Welcome to the Tax Data Program***************\n\n";
 
     // Get user's name

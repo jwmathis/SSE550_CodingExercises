@@ -1,5 +1,7 @@
-// Module7_Exercise2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 7 Exercise 2
+// A program to calculate if a number is prime or not.
+//--------------------------------------------------------------------------------------
 
 #include <iostream>
 #include <cmath>
@@ -12,7 +14,7 @@ int divisor = -1;
 //========================
 
 //==================================================
-// Declaring fucntions
+// Declaring functions
 bool isPrime(int num) {
     if (num == 2 || num == 3) return true;
     if (num % 2 == 0 || num % 3 == 0) {
@@ -35,6 +37,7 @@ bool isPrime(int num) {
     return true;
 }
 //==================================================
+
 
 int main()
 {

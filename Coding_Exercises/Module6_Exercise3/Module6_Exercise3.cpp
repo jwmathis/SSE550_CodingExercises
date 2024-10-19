@@ -1,3 +1,8 @@
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 6 Exercise 3
+// A program to calculate letter grade and average grade based on number grade of three 
+// assignments.
+//--------------------------------------------------------------------------------------
 #include <iostream>
 
 using namespace std;

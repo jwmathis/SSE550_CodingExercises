@@ -1,5 +1,8 @@
-// Module7_Exercise3.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 7 Exercise 3
+// A program that picks a random number and gives the user 10 attempts to guess the
+// number. This program provides tells the user if their guess is too high or too low.
+//--------------------------------------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>
@@ -17,7 +20,7 @@ int main()
     int attempts = 0;
     const int maxAttempts = 10;
     //=============================================
-    cout << "I'm thinkning of a number between 1 and 100. Can you guess it?\n";
+    cout << "I'm thinking of a number between 1 and 100. Can you guess it?\n";
 
     do {
         cout << "Enter your guess: ";

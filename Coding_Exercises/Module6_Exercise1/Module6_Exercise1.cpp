@@ -1,5 +1,8 @@
-// Module6_Exercise1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 6 Exercise 1
+// A program to greet user based on time of day and to provide fortune based on user's 
+// favorite color.
+//--------------------------------------------------------------------------------------
 
 #include <iostream>
 #include <ctime>

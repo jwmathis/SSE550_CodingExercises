@@ -1,5 +1,7 @@
-// Module6_Exercise4.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 6 Exercise 4
+// A program to print truth table from given input.
+//--------------------------------------------------------------------------------------
 
 #include <iostream>
 #include <string>

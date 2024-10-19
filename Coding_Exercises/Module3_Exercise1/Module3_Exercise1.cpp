@@ -1,7 +1,6 @@
 //--------------------------------------------------------------------------------------
-//11 September 2024
-//SSE 550, Module 3 Exercise 1 
-//A simple program that prompts the user for input and then displays that information, then
+// SSE 550, Module 3 Exercise 1 
+// A simple program that prompts the user for input and then displays that information, then
 // prompts ths user to verify the data.
 //--------------------------------------------------------------------------------------
 
@@ -13,13 +12,13 @@ using namespace std;
 int main() {
 
     //========================================================================
-        //  Declaration of constants
+    // Filing status constants
     const int SINGLE = 1;
     const int MARRIED_FILING_JOINTLY = 2;
     const int MARRIED_FILING_SEPARATELY = 3;
     const int HEAD_OF_HOUSEHOLD = 4;
 
-    // Tax rates
+    // Tax rate constants
     const float TAX_RATE_SINGLE = 0.22;
     const float TAX_RATE_MARRIED = 0.30;
     const float TAX_RATE_HEAD_OF_HOUSEHOLD = 0.25;
@@ -35,24 +34,21 @@ int main() {
     char userInput;
     //=======================================================================
 
-
-        //Display welcome message
+    // Display welcome message
     cout << "***************Welcome to the Tax Data Program***************\n\n";
 
     // Get user's name
     cout << "Please type your first name to begin: ";
     cin >> first_name;
-
     cout << "Please type your last name: ";
     cin >> last_name;
-
     cout << "Please type your middle initial (or enter 'N' if none): ";
     cin >> middle_initial;
-
     cout << "Please type your preferred name (or hit \"Enter\" key to proceed to next step): ";
     cin.ignore();
     getline(cin, nickName);
 
+    // Set userName
     if (nickName.empty()) {
         userName = first_name;
     }
@@ -60,6 +56,7 @@ int main() {
         userName = nickName;
     }
 
+    // Greet user by name
     cout << "\n\n***************************************************************************\n";
     cout << "Hi " << userName << "! I'll need you to answer a few questions. Let's begin!\n\n";
 

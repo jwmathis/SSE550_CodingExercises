@@ -1,5 +1,7 @@
-// Module5_Exercise1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 5 Exercise 1
+// A program to form sentences from user inputted noun, verb, and adjective
+//--------------------------------------------------------------------------------------
 
 #include <iostream>
 #include <string>

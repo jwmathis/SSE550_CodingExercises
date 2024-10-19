@@ -1,6 +1,7 @@
-//14 September 2024
-// Module5_Exercise2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 5 Exercise 2
+// A program to determine how many letters it takes to write a name 5 times.
+//--------------------------------------------------------------------------------------
 
 #include <iostream>
 #include <string>

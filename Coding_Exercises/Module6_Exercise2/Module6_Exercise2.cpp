@@ -1,5 +1,7 @@
-// 14 September 2024
-//Module 6 Exercise 2 - cpp program to calculate if inputted year form user is a leap year
+//--------------------------------------------------------------------------------------
+// SSE 550, Module 6 Exercise 2
+// A program to calculate if inputted year form user is a leap year
+//--------------------------------------------------------------------------------------
 
 #include <iostream>
 
