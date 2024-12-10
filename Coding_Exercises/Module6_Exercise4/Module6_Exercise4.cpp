@@ -1,6 +1,8 @@
 //--------------------------------------------------------------------------------------
 // SSE 550, Module 6 Exercise 4
 // A program to print truth table from given input.
+// Ref: ChatGPT was used during debugging of logic flow.
+// https://www.geeksforgeeks.org/std-find-in-cpp/
 //--------------------------------------------------------------------------------------
 
 #include <iostream>

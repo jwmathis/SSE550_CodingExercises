@@ -1,7 +1,10 @@
 //--------------------------------------------------------------------------------------
 // SSE 550, Module 6 Exercise 1
 // A program to greet user based on time of day and to provide fortune based on user's 
-// favorite color.
+// favorite color. This program can handle 6 different colors along with 
+// handling colors not accounted for.
+// Ref: ChatGPT was used to generate the quotes
+// https://www.tutorialspoint.com/cplusplus/cpp_date_time.htm
 //--------------------------------------------------------------------------------------
 
 #include <iostream>
@@ -17,7 +20,7 @@ int main()
     // Declare variables
     time_t now = time(0); // gets current time (in seconds) since the unix epoch (Jan 1, 1970, 00:00:00 UTC)
     struct tm local_time; // Declare a tm structure to hold the local time
-    errno_t err = localtime_s(&local_time, &now); // Convert to local time in a thread-safe manner
+    errno_t err = localtime_s(&local_time, &now); // Convert to local time 
     if (err) {
         cout << "Error converting time" << endl;
         return 1;  // Exit on failure
@@ -94,7 +97,7 @@ int main()
 
     int randomIndex = dis(gen); // Generate random index
 
-    // Give quote baed on color
+    // Give quote based on color and random index
     if (color == "red") {
         cout << RED_PRED_ARRAY[randomIndex];
     }

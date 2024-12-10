@@ -1,5 +1,6 @@
 ﻿  Module3_Exercise1.cpp
-C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module3_Exercise1\Module3_Exercise1.cpp(23,35): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module3_Exercise1\Module3_Exercise1.cpp(24,36): warning C4305: 'initializing': truncation from 'double' to 'float'
-  LINK : C:\Users\John Wesley\Source\Repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\x64\Debug\Module3_Exercise1.exe not found or not built by the last incremental link; performing full link
+C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module3_Exercise1\Module3_Exercise1.cpp(22,35): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module3_Exercise1\Module3_Exercise1.cpp(23,36): warning C4305: 'initializing': truncation from 'double' to 'float'
   Module3_Exercise1.vcxproj -> C:\Users\John Wesley\Source\Repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\x64\Debug\Module3_Exercise1.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

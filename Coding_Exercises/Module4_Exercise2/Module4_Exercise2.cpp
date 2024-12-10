@@ -1,6 +1,8 @@
 //--------------------------------------------------------------------------------------
 // SSE 550, Module 4 Exercise 2
 // A program to multiply fractions and return formatted reduced result.
+// Ref: https://www.geeksforgeeks.org/stringstream-c-applications/
+// https://dev.to/dchhitarka/how-to-find-gcd-of-two-or-more-numbers-ibi#:~:text=GCD%20Using%20Euclidean%20Algorithm&text=We%20use%20the%20modulo%20operation,the%20remainder%20is%20not%200.
 //--------------------------------------------------------------------------------------
 
 #include <iostream>
@@ -46,12 +48,12 @@ int main()
     b = resultDenominator;
 
     // Find greatest common denominator
-    while (b != 0) {
-        temp = b;
-        b = a % b;
-        a = temp;
+    while ((a % b) > 0) {
+        gcd = a % b;
+        a = b;
+        b = gcd;
     }
-    gcd = a;
+    gcd = b;
 
     // Simplify fraction
     resultNumerator /= gcd;

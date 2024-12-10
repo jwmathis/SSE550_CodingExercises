@@ -1,2 +1,5 @@
 ﻿  Module4_Exercise2.cpp
-  Module4_Exercise2.vcxproj -> C:\Users\John.Mathis.SERN\source\repos\SSE550_CodingExercises\Coding_Exercises\x64\Debug\Module4_Exercise2.exe
+C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module4_Exercise2\Module4_Exercise2.cpp(20,15): warning C4101: 'temp': unreferenced local variable
+  Module4_Exercise2.vcxproj -> C:\Users\John Wesley\Source\Repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\x64\Debug\Module4_Exercise2.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

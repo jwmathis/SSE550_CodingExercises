@@ -2,6 +2,7 @@
 // SSE 550, Module 7 Exercise 3
 // A program that picks a random number and gives the user 10 attempts to guess the
 // number. This program provides tells the user if their guess is too high or too low.
+// Ref: https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/
 //--------------------------------------------------------------------------------------
 
 #include <iostream>

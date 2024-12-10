@@ -1,0 +1,6 @@
+﻿  Module5_Exercise2.cpp
+C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module5_Exercise2\Module5_Exercise2.cpp(24,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module5_Exercise2\Module5_Exercise2.cpp(37,49): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Module5_Exercise2.vcxproj -> C:\Users\John Wesley\Source\Repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\x64\Debug\Module5_Exercise2.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

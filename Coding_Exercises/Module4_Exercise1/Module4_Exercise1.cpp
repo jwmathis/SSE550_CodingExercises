@@ -71,7 +71,7 @@ int main() {
     cout << "Please type your last name: ";
     cin >> last_name;
 
-    cout << "Please type your middle initial (or enter 'N' if none): ";
+    cout << "Please type your middle initial (or enter 'n' if none): ";
     cin >> middle_initial;
 
     cout << "Please type your preferred name (or hit \"Enter\" key to proceed to next step): ";
@@ -122,7 +122,7 @@ int main() {
     // Print out collected information for verification
     cout << "\n\n\n\n**************Data Verification****************\n";
     cout << "Name: " << first_name << " ";
-    if (middle_initial != 'N' && middle_initial != 'n') { // Error handling
+    if (middle_initial != 'n') { // Error handling
         cout << middle_initial << ". ";
     }
     cout << last_name << "\n";

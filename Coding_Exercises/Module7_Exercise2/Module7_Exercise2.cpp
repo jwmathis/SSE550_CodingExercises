@@ -1,6 +1,7 @@
 //--------------------------------------------------------------------------------------
 // SSE 550, Module 7 Exercise 2
 // A program to calculate if a number is prime or not.
+// Ref: https://math.stackexchange.com/questions/3980707/identifying-a-prime-number-why-only-check-for-factors-up-to-sqrtn
 //--------------------------------------------------------------------------------------
 
 #include <iostream>
@@ -16,20 +17,15 @@ int divisor = -1;
 //==================================================
 // Declaring functions
 bool isPrime(int num) {
-    if (num == 2 || num == 3) return true;
-    if (num % 2 == 0 || num % 3 == 0) {
-        divisor = (num % 2 == 0) ? 2 : 3; //set the divisor
+    if (num == 2) return true;
+    if (num % 2 == 0) {
+        divisor = 2; //set the divisor
         return false;
     }
     // check for factors from 5 to sqrt(num)
-    for (int i = 5; i <= sqrt(num); i += 6) {
+    for (int i = 3; i <= sqrt(num); i += 2) {
         if (num % i == 0) {
             divisor = i;
-            return false;
-        }
-
-        if (num % (i + 2) == 0) {
-            divisor = i + 2;
             return false;
         }
     }
@@ -52,7 +48,7 @@ int main()
         cin >> num;
 
         if (num < 1 || num == 1) {
-            cout << "Invalid input. ";
+            cout << "Invalid input.\n";
         }
         else {
             break;

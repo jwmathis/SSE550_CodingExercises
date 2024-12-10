@@ -2,8 +2,11 @@
 // SSE 550, Module 6 Exercise 3
 // A program to calculate letter grade and average grade based on number grade of three 
 // assignments.
+// Ref: https://www.geeksforgeeks.org/round-in-cpp/
+// https://www.geeksforgeeks.org/ceil-floor-functions-cpp/
 //--------------------------------------------------------------------------------------
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -23,7 +26,7 @@ int main(void) {
             cout << "Enter your grade on exercise " << i << ": ";
             cin >> userInput;
 
-            if (userInput < 0 || userInput > 100) {
+            if (userInput < 0) {
                 cout << "Invalid output. Please enter a number between 0 and 100. ";
             }
             else {
@@ -54,7 +57,7 @@ int main(void) {
         letterGrade = 'F';
     }
 
-    cout << "Your grade is " << average << " and letter grade " << letterGrade << endl;
+    cout << "Your grade is " << ceil(average) << " and letter grade " << letterGrade << endl;
 
     return 0;
 }

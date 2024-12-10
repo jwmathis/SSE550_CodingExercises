@@ -1,3 +1,5 @@
 ﻿  Module7_Exercise3.cpp
-C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module7_Exercise3\Module7_Exercise3.cpp(14,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Module7_Exercise3.vcxproj -> C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\x64\Debug\Module7_Exercise3.exe
+C:\Users\John Wesley\source\repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\Module7_Exercise3\Module7_Exercise3.cpp(17,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Module7_Exercise3.vcxproj -> C:\Users\John Wesley\Source\Repos\jwmathis\SSE550_CodingExercises\Coding_Exercises\x64\Debug\Module7_Exercise3.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

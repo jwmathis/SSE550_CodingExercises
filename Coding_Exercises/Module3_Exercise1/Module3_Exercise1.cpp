@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------------------------
 // SSE 550, Module 3 Exercise 1 
 // A simple program that prompts the user for input and then displays that information, then
-// prompts ths user to verify the data.
+// prompts the user to verify the data.
 //--------------------------------------------------------------------------------------
 
 
@@ -42,7 +42,7 @@ int main() {
     cin >> first_name;
     cout << "Please type your last name: ";
     cin >> last_name;
-    cout << "Please type your middle initial (or enter 'N' if none): ";
+    cout << "Please type your middle initial (or enter 'n' if none): ";
     cin >> middle_initial;
     cout << "Please type your preferred name (or hit \"Enter\" key to proceed to next step): ";
     cin.ignore();
@@ -86,6 +86,10 @@ int main() {
     // Get income level
     cout << "Third question, what is your income level? ";
     cin >> income;
+    if (income < 0) {
+        cout << "\nInvalid income entered.";
+        return 1;
+    }
 
     // Output tax rate based on filing status
     if (filing_status == SINGLE) {
@@ -101,11 +105,12 @@ int main() {
     // Print out collected information for verification
     cout << "\n\n\n\n**************Data Verification****************\n";
     cout << "Name: " << first_name << " ";
-    if (middle_initial != 'N' && middle_initial != 'n') {
+    if (middle_initial != 'n') {
         cout << middle_initial << ". ";
     }
     cout << last_name << "\n";
 
+    // Print user selected filing status
     cout << "Filing Status: " <<
         (filing_status == SINGLE ? "Single" :
             filing_status == MARRIED_FILING_JOINTLY ? "Married Filing Jointly" :
